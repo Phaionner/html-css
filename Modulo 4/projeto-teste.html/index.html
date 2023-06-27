@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecione o Anime</title>
+    <style>
+        .imagem {
+          display: none;
+        }
+      </style>
+      <script>
+        function mostrarImagem() {
+          var imagem = document.getElementById("imagem");
+          var radio = document.getElementById("radio");
+    
+          if (radio.checked) {
+            imagem.style.display = "block";
+          } else {
+            imagem.style.display = "none";
+          }
+        }
+      </script>
+</head>
+<body>
+    <input type="radio" id="radio" name="opcao" onclick="mostrarImagem()">Mostrar imagem
+    <br>
+    <img id="imagem" class="imagem" src="c_xL2w3j_400x400.jpg">
+
+</body>
+</html>
